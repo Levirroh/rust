@@ -17,19 +17,16 @@ fn main() {
         .expect("Failed to read line");
     println!("second number is: {}", ndois);
 
-    let num: i32 = num.trim().parse().expect("Please type a number!"); //.transforma em int o string
-    let ndois: i32 = ndois.trim().parse().expect("Please type a number!");
+    let num: f64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
+    let ndois: f64 = ndois.trim().parse().expect("Please type a number!");
 
-    if ndois == 0{
+    if ndois == 0.0{
         println!("Não se pode dividir por zero! Tente novamente");
         main()
     } else{
-        let resultado = ndois / num;
-        println!("The result is: {} + {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
+        let resultado = num / ndois as f64; // deixa o resultado em float
+        println!("The result is: {} / {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
     }
 
 
 }
-
-  
-    
