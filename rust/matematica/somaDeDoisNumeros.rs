@@ -1,31 +1,25 @@
 use std::io;
+fn main() {
 
-fn main(){
+    println!("Write 2 numbers (press enter between them): ");
+
     let mut num = String::new();
-    println!("Escreva um número");
+    let mut ndois = String::new();
 
     io::stdin()
         .read_line(&mut num)
         .expect("Failed to read line");
-    
-    let num: i32 = num.trim().parse().expect("Please type a number!");
+    println!("first number is: {}", num);
 
-    
-    let mut ndois = String::new();
-    println!("Escreva um número");
-    
-     io::stdin()
+    io::stdin()
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    
+    println!("second number is: {}", ndois);
+
+    let num: i32 = num.trim().parse().expect("Please type a number!");
     let ndois: i32 = ndois.trim().parse().expect("Please type a number!");
-   
-    
-    println!("{}, {}", num, ndois);
 
-    let resultado = num + ndois;
-
-    println!("{}", resultado)
+    let resultado = ndois + num;
     
+    println!("The result is: {} + {} = {}", num,ndois,resultado)
 }
-
