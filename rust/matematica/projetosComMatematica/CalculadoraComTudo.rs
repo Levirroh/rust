@@ -1,4 +1,5 @@
 
+
 fn main() {
     let mut escolha = String::new();
     println!("Escolha uma operação:");
@@ -12,7 +13,7 @@ fn main() {
         .read_line(&mut escolha)
         .expect("Failed to read line");
     
-
+    
     match escolha:
         "1" => soma();
         "2" => subtracao();
@@ -75,7 +76,7 @@ fn subtracao(){
 
 
 fn multiplicar(){
-     println!("Write 2 numbers (press enter between them): ");
+    println!("Write 2 numbers (press enter between them): ");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -99,7 +100,7 @@ fn multiplicar(){
 }
 
 fn divisao(){
-     println!("Write 2 numbers (press enter between them): ");
+    println!("Write 2 numbers (press enter between them): ");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -125,3 +126,39 @@ fn divisao(){
         println!("The result is: {} / {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
     }
 }
+
+
+fn fatorial(){
+    println!("Escreva o número da base: ");
+    
+    let mut num = String::new(); //faz com que a variável seja em formato de input
+    let mut ndois = String::new();
+
+    io::stdin() //isso faz com que o código leia um input
+        .read_line(&mut num)
+        .expect("Failed to read line");
+    println!("first number is: {}", num);  
+
+    println!("Escreva o número do expoente: ");
+
+
+    io::stdin() //isso faz com que o código leia um input
+        .read_line(&mut ndois)
+        .expect("Failed to read line");
+    println!("second number is: {}", ndois);
+
+    let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
+    let ndois: i64 = ndois.trim().parse().expect("Please type a number!");
+    
+    let mut i = "0";
+    let i: i32 = i.trim().parse().expect("Please type a number!");
+
+    let mut resultado = 1 as i64;
+    for (i != ndois) {
+        resultado = resultado * num;
+    } 
+    println!("{} elevado a {} é igual a: {}",num,ndois,resultado)
+}
+
+
+
