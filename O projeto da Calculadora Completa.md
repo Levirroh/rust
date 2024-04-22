@@ -1,9 +1,15 @@
 Pretendo fazer uma calculadora completa, e funcional caso possível.
 
-Nela ainda já existem operações básicas, porém com o tempo eu quero colocar coisas como:
+Nela ainda já existem operações básicas:
+- soma;
+- subtracao;
+- divisao;
+- multiplicacao;
+- fatoriais;
+- exponenciais;
 
-- Exponenciais,
-- Fatoriais,
+Porém com o tempo eu quero colocar coisas como:
+
 - Raiz Quadrada,
 - Comparações entre dois números,
 - Logarítmos,
