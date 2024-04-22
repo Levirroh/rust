@@ -181,5 +181,5 @@ fn fatorial(){
             resto = resto - 1;
             resultado = resultado * (resto);        
     } 
-    println!("{} fatorial é igual a: {}",num,resultado);
+    println!("{}! é igual a: {}",num,resultado);
 }
