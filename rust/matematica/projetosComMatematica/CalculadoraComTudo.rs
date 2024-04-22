@@ -14,14 +14,17 @@ fn main() {
         .read_line(&mut escolha)
         .expect("Failed to read line");
     
-    
-    match escolha:
-        "1" => soma();
-        "2" => subtracao();
-        "3" => divisao();
-        "4" => multiplicar();
-        "5" => fatorial();
-        "6" => exponencial();
+    let escolha: i32 = escolha.trim().parse().expect("Please type a number!"); //.transforma em int o string
+
+    match escolha {
+        1 => soma(),
+        2 => subtracao(),
+        3 => divisao(),
+        4 => multiplicar(),
+        5 => fatorial(),
+        6 => exponencial(),
+        _ => println!("Escolha inválida, reinicie o código.")
+    }
 }
 
 
@@ -180,5 +183,3 @@ fn fatorial(){
     } 
     println!("{} fatorial é igual a: {}",num,resultado);
 }
-
-
