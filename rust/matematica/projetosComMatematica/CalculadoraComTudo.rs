@@ -29,7 +29,7 @@ fn main() {
 
 
 fn soma(){
-     println!("Write 2 numbers (press enter between them): ");
+     println!("Escreva o primeiro número. ");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -37,25 +37,26 @@ fn soma(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("O primeiro número é: {}", num);  
+     println!("Escreva o segundo número. ");
 
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    println!("second number is: {}", ndois);
+    println!("O segundo número é: {}", ndois);
 
     let num: i32 = num.trim().parse().expect("Please type a number!"); //.transforma em int o string
     let ndois: i32 = ndois.trim().parse().expect("Please type a number!");
 
     let resultado = ndois + num;
     
-    println!("The result is: {} + {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
+    println!("O resultado é: {} + {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
 }
 
 
 
 fn subtracao(){
-    println!("Write 2 numbers (press enter between them): ");
+    println!("Escreva o primeiro número");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -63,24 +64,25 @@ fn subtracao(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("O primeiro número é: {}", num);  
+    println!("Escreva o segundo número");
 
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    println!("second number is: {}", ndois);
+    println!("O segundo número é: {}", ndois);
 
     let num: i32 = num.trim().parse().expect("Please type a number!"); //.transforma em int o string
     let ndois: i32 = ndois.trim().parse().expect("Please type a number!");
 
     let resultado = num - ndois;
     
-    println!("The result is: {} - {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
+    println!("O resultado é: {} - {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
 }
 
 
 fn multiplicar(){
-    println!("Write 2 numbers (press enter between them): ");
+    println!("Escreva o primeiro número ");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -88,23 +90,24 @@ fn multiplicar(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("O primeiro número é: {}", num);  
+    println!("Escreva o segundo número ");
 
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    println!("second number is: {}", ndois);
+    println!("O segundo número é: {}", ndois);
 
     let num: i32 = num.trim().parse().expect("Please type a number!"); //.transforma em int o string
     let ndois: i32 = ndois.trim().parse().expect("Please type a number!");
 
     let resultado = ndois * num;
     
-    println!("The result is: {} x {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
+    println!("O resultado é: {} x {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
 }
 
 fn divisao(){
-    println!("Write 2 numbers (press enter between them): ");
+    println!("Escreva o primeiro número.");
 
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -112,12 +115,14 @@ fn divisao(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("O segundo número é: {}", num);  
+
+    println!("Escreva o segundo número");
 
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    println!("second number is: {}", ndois);
+    println!("O segundo número é: {}", ndois);
 
     let num: f64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
     let ndois: f64 = ndois.trim().parse().expect("Please type a number!");
@@ -127,7 +132,7 @@ fn divisao(){
         main()
     } else{
         let resultado = num / ndois as f64; // deixa o resultado em float
-        println!("The result is: {} / {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
+        println!("O resultado é: {} / {} = {}", num,ndois,resultado) //para se ter variável em um texto se declara deste jeito
     }
 }
 
@@ -141,7 +146,7 @@ fn exponencial(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("A base é: {}", num);  
 
     println!("Escreva o número do expoente: ");
 
@@ -149,7 +154,7 @@ fn exponencial(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut ndois)
         .expect("Failed to read line");
-    println!("second number is: {}", ndois);
+    println!("O expoente é: {}", ndois);
 
     let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em int (i64 pq pode ser grande))
     let ndois: i64 = ndois.trim().parse().expect("Please type a number!");
@@ -169,7 +174,7 @@ fn fatorial(){
     io::stdin() //isso faz com que o código leia um input
         .read_line(&mut num)
         .expect("Failed to read line");
-    println!("first number is: {}", num);  
+    println!("O número é: {}", num);  
 
     let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
     let mut resto = num;
@@ -181,5 +186,5 @@ fn fatorial(){
             resto = resto - 1;
             resultado = resultado * (resto);        
     } 
-    println!("{}! é igual a: {}",num,resultado);
+    println!("O resultado de {}! é igual a: {}",num,resultado);
 }
