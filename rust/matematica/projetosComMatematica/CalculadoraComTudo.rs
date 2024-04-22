@@ -150,14 +150,11 @@ fn fatorial(){
     let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
     let ndois: i64 = ndois.trim().parse().expect("Please type a number!");
     
-    let mut i = "0";
-    let i: i32 = i.trim().parse().expect("Please type a number!");
-
     let mut resultado = 1 as i64;
-    for (i != ndois) {
+    for i in 0..ndois {
         resultado = resultado * num;
     } 
-    println!("{} elevado a {} é igual a: {}",num,ndois,resultado)
+    println!("{} elevado a {} é igual a: {}",num,ndois,resultado);
 }
 
 
