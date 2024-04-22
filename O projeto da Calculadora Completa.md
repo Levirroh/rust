@@ -17,7 +17,7 @@ Na parte de Comparações pretendo colocar, por enquanto, estas a seguir:
 - Diferente, igual, maior, menor que outro número.
 
 
-Tudo isso, para mim que está ainda aprendendo programação, é um processo lento e frustrante por isso pretendo acabar tudo isso pelo menos até 2026
+Tudo isso, para mim que está ainda aprendendo programação, pretendo acabar tudo isso pelo menos até o meio do ano
 - Imagino que não passe disso pelo menos.
 
 Além deste projeto ainda tenho vontade de começar outros então é possível que este não seja terminado conforme eu descubro novos interesses.
