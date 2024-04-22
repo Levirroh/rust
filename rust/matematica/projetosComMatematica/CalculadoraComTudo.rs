@@ -129,7 +129,7 @@ fn divisao(){
 
 
 fn exponencial(){
-    println!("Escreva o número da base: ");
+      println!("Escreva o número da base: ");
     
     let mut num = String::new(); //faz com que a variável seja em formato de input
     let mut ndois = String::new();
@@ -147,7 +147,7 @@ fn exponencial(){
         .expect("Failed to read line");
     println!("second number is: {}", ndois);
 
-    let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
+    let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em int (i64 pq pode ser grande))
     let ndois: i64 = ndois.trim().parse().expect("Please type a number!");
     
     let mut resultado = 1 as i64;
