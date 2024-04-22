@@ -14,9 +14,8 @@ Porém com o tempo eu quero colocar coisas como:
 - Comparações entre dois números,
 - Logarítmos,
 - Transformações de Unidades de Medidas,
-- Equações,
-- Expressões,
-- Contas com mais de 2 números.
+- Equações (este talvez não seja possível),
+- Contas com mais de 2 números (Expressões).
 
 Na parte de Comparações pretendo colocar, por enquanto, estas a seguir:
 - Categoria de um número, se é Natural, Inteiro, Real, etc.
