@@ -128,7 +128,7 @@ fn divisao(){
 }
 
 
-fn fatorial(){
+fn exponencial(){
     println!("Escreva o número da base: ");
     
     let mut num = String::new(); //faz com que a variável seja em formato de input
