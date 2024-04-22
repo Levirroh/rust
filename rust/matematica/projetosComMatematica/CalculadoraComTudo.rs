@@ -157,5 +157,27 @@ fn exponencial(){
     println!("{} elevado a {} é igual a: {}",num,ndois,resultado);
 }
 
+fn fatorial(){
+    println!("Escreva o número que seja fatoriado: ");
+    
+    let mut num = String::new(); //faz com que a variável seja em formato de input
+
+    io::stdin() //isso faz com que o código leia um input
+        .read_line(&mut num)
+        .expect("Failed to read line");
+    println!("first number is: {}", num);  
+
+    let num: i64 = num.trim().parse().expect("Please type a number!"); //.transforma a String em float (f64)
+    let mut resto = num;
+    let mut resultado = 1 as i64;
+    for i in 1..num {
+        if i == 1 {
+            resultado = resultado * (num);
+        }
+            resto = resto - 1;
+            resultado = resultado * (resto);        
+    } 
+    println!("{} fatorial é igual a: {}",num,resultado);
+}
 
 
